@@ -11,6 +11,8 @@ class Coupang extends \Phalcon\Mvc\Controller
         $request = $this->request;
         $this->uid = uniqid();
         $this->logger->info($this->uid . ' request start');
+        $this->logger->info($this->uid . ' client address: ' . $request->getClientAddress());
+        $this->logger->info($this->uid . ' user agent: ' . $request->getUserAgent());
         $this->logger->info($this->uid . ' ' . $request->getMethod().': '.$request->getURI());
         $this->logger->info($this->uid . ' Body: ' . json_encode($request->getJsonRawBody(), JSON_PRETTY_PRINT|JSON_UNESCAPED_SLASHES));
         $response = $this->response;
