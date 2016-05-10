@@ -1,0 +1,19 @@
+{
+    "name": "yejune/skeleton",
+    "require": {
+        "yejune/peanut": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "App\\Controllers\\": "app/controllers",
+            "App\\Traits\\": "app/traits",
+            "Peanut\\": "vendor/yejune/peanut/src/Peanut/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phing/phing": "*",
+        "mayflower/php-codebrowser": "*"
+    }
+}

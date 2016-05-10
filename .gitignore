@@ -1,0 +1,6 @@
+.migration
+vendor
+__delete
+composer.lock
+build
+logs/*.log
